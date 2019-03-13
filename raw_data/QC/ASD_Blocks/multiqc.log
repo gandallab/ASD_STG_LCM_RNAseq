@@ -1,0 +1,317 @@
+[2019-03-10 19:33:56,447] multiqc                                            [DEBUG  ]  No MultiQC config found: /u/home/g/gandalm/.conda/envs/myconda/lib/python3.6/site-packages/multiqc_config.yaml
+[2019-03-10 19:33:56,447] multiqc                                            [DEBUG  ]  No MultiQC config found: /u/home/g/gandalm/.multiqc_config.yaml
+[2019-03-10 19:33:56,447] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2019-03-10 19:33:56,447] multiqc                                            [DEBUG  ]  Command used: /u/home/g/gandalm/.conda/envs/myconda/bin/multiqc sample_merged/
+[2019-03-10 19:33:57,261] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.7
+[2019-03-10 19:33:57,261] multiqc                                            [INFO   ]  This is MultiQC v1.7
+[2019-03-10 19:33:57,261] multiqc                                            [DEBUG  ]  Command     : /u/home/g/gandalm/.conda/envs/myconda/bin/multiqc sample_merged/
+[2019-03-10 19:33:57,261] multiqc                                            [DEBUG  ]  Working dir : /u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star
+[2019-03-10 19:33:57,261] multiqc                                            [INFO   ]  Template    : default
+[2019-03-10 19:33:57,262] multiqc                                            [INFO   ]  Searching 'sample_merged/'
+[2019-03-10 19:33:57,262] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, conpair, peddy, methylQA, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, dedup, damageprofiler, picard, prokka, samblaster, samtools, bamtools, jellyfish, vcftools, longranger, stacks, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, trimmomatic, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, minionqc, clusterflow, bcl2fastq, interop, flash
+[2019-03-10 19:33:57,262] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpr7e1zuon
+[2019-03-10 19:33:57,328] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: sample_merged/multiqc_data
+[2019-03-10 19:33:57,553] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_C01.merged.bam
+[2019-03-10 19:33:57,612] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_D02.merged.bam
+[2019-03-10 19:33:57,727] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_D02.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:57,728] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G04.merged.bam
+[2019-03-10 19:33:57,787] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G02.merged.bam
+[2019-03-10 19:33:57,845] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G02.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:57,846] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F02.merged.bam
+[2019-03-10 19:33:57,906] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_B01.merged.bam
+[2019-03-10 19:33:57,976] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_B02.merged.bam
+[2019-03-10 19:33:58,056] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F06.merged.bam
+[2019-03-10 19:33:58,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F06.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F03.merged.bam
+[2019-03-10 19:33:58,208] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F05.merged.bam
+[2019-03-10 19:33:58,269] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_A02.merged.bam
+[2019-03-10 19:33:58,327] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_A02.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,328] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F04.merged.bam
+[2019-03-10 19:33:58,387] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F04.merged.picard_metrics.temp.dup.bam
+[2019-03-10 19:33:58,387] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F04.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,388] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_H02.merged.bam
+[2019-03-10 19:33:58,447] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_H01.merged.bam
+[2019-03-10 19:33:58,507] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_A01.merged.bam
+[2019-03-10 19:33:58,567] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B05.merged.bam
+[2019-03-10 19:33:58,625] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B05.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,626] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B06.merged.bam
+[2019-03-10 19:33:58,684] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B06.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,685] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B02.merged.bam
+[2019-03-10 19:33:58,744] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A03.merged.bam
+[2019-03-10 19:33:58,803] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A05.merged.bam
+[2019-03-10 19:33:58,862] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A05.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,863] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A07.merged.bam
+[2019-03-10 19:33:58,922] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A07.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:58,922] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A06.merged.bam
+[2019-03-10 19:33:58,981] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A04.merged.bam
+[2019-03-10 19:33:59,040] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A04.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:59,042] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam
+[2019-03-10 19:33:59,062] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0013.bam
+[2019-03-10 19:33:59,062] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0014.bam
+[2019-03-10 19:33:59,063] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0015.bam
+[2019-03-10 19:33:59,063] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0016.bam
+[2019-03-10 19:33:59,063] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0017.bam
+[2019-03-10 19:33:59,102] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.picard_metrics.temp.dup.bam
+[2019-03-10 19:33:59,102] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0008.bam
+[2019-03-10 19:33:59,102] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0009.bam
+[2019-03-10 19:33:59,102] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0010.bam
+[2019-03-10 19:33:59,102] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0011.bam
+[2019-03-10 19:33:59,102] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0012.bam
+[2019-03-10 19:33:59,103] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:33:59,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0000.bam
+[2019-03-10 19:33:59,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0001.bam
+[2019-03-10 19:33:59,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0002.bam
+[2019-03-10 19:33:59,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0003.bam
+[2019-03-10 19:33:59,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0004.bam
+[2019-03-10 19:33:59,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0005.bam
+[2019-03-10 19:33:59,141] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0006.bam
+[2019-03-10 19:33:59,141] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0007.bam
+[2019-03-10 19:33:59,142] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0018.bam
+[2019-03-10 19:33:59,142] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0019.bam
+[2019-03-10 19:33:59,142] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0020.bam
+[2019-03-10 19:33:59,142] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0021.bam
+[2019-03-10 19:33:59,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0022.bam
+[2019-03-10 19:33:59,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0023.bam
+[2019-03-10 19:33:59,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0024.bam
+[2019-03-10 19:33:59,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0025.bam
+[2019-03-10 19:33:59,143] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0026.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0027.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0028.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0029.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0030.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0031.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0032.bam
+[2019-03-10 19:33:59,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0033.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0034.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0035.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0036.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0037.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0038.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0039.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0040.bam
+[2019-03-10 19:33:59,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0041.bam
+[2019-03-10 19:33:59,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0042.bam
+[2019-03-10 19:33:59,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0043.bam
+[2019-03-10 19:33:59,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0044.bam
+[2019-03-10 19:33:59,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0045.bam
+[2019-03-10 19:33:59,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0046.bam
+[2019-03-10 19:33:59,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0047.bam
+[2019-03-10 19:33:59,147] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0048.bam
+[2019-03-10 19:33:59,148] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0049.bam
+[2019-03-10 19:33:59,148] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0050.bam
+[2019-03-10 19:33:59,148] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0051.bam
+[2019-03-10 19:33:59,148] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0052.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0053.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0054.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0055.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0056.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0057.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0058.bam
+[2019-03-10 19:33:59,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0059.bam
+[2019-03-10 19:33:59,150] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0060.bam
+[2019-03-10 19:33:59,150] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.bam.tmp.0061.bam
+[2019-03-10 19:33:59,151] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A01.merged.name.bam
+[2019-03-10 19:33:59,152] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_G01.merged.bam
+[2019-03-10 19:33:59,259] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_A02.merged.bam
+[2019-03-10 19:33:59,340] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B03.merged.bam
+[2019-03-10 19:33:59,400] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H04.merged.bam
+[2019-03-10 19:33:59,458] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H05.merged.bam
+[2019-03-10 19:33:59,516] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_G02.merged.bam
+[2019-03-10 19:33:59,621] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_E01.merged.bam
+[2019-03-10 19:33:59,680] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_F02.merged.bam
+[2019-03-10 19:33:59,763] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H06.merged.bam
+[2019-03-10 19:33:59,822] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H02.merged.bam
+[2019-03-10 19:33:59,882] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_D01.merged.bam
+[2019-03-10 19:33:59,963] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H03.merged.bam
+[2019-03-10 19:34:00,022] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H03.merged.picard_metrics.temp.dup.bam
+[2019-03-10 19:34:00,022] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H03.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,023] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_F01.merged.bam
+[2019-03-10 19:34:00,112] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_E02.merged.bam
+[2019-03-10 19:34:00,170] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_E02.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,171] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G01.merged.bam
+[2019-03-10 19:34:00,230] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G01.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,231] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F01.merged.bam
+[2019-03-10 19:34:00,290] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_F01.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,291] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_H01.merged.bam
+[2019-03-10 19:34:00,349] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G03.merged.bam
+[2019-03-10 19:34:00,408] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G03.merged.picard_metrics.temp.dup.bam
+[2019-03-10 19:34:00,409] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G06.merged.bam
+[2019-03-10 19:34:00,467] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G06.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,467] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_G05.merged.bam
+[2019-03-10 19:34:00,552] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS2018_C02.merged.bam
+[2019-03-10 19:34:00,632] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D03.merged.bam
+[2019-03-10 19:34:00,712] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D01.merged.bam
+[2019-03-10 19:34:00,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D01.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,770] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D02.merged.bam
+[2019-03-10 19:34:00,780] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C01.merged.bam
+[2019-03-10 19:34:00,840] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C01.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:00,841] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C05.merged.bam
+[2019-03-10 19:34:00,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D05.merged.bam
+[2019-03-10 19:34:01,014] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D06.merged.bam
+[2019-03-10 19:34:01,101] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C02.merged.bam
+[2019-03-10 19:34:01,166] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C04.merged.bam
+[2019-03-10 19:34:01,230] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C04.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:01,231] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C03.merged.bam
+[2019-03-10 19:34:01,292] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C03.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:01,293] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_C06.merged.bam
+[2019-03-10 19:34:01,384] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B04.merged.bam
+[2019-03-10 19:34:01,450] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B04.merged.picard_metrics.gc_bias.chart.pdf
+[2019-03-10 19:34:01,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_D04.merged.bam
+[2019-03-10 19:34:01,539] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_E05.merged.bam
+[2019-03-10 19:34:04,338] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_E06.merged.bam
+[2019-03-10 19:34:04,420] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B01.merged.bam
+[2019-03-10 19:34:04,480] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_B01.merged.picard_metrics.temp.dup.bam
+[2019-03-10 19:34:04,480] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_E02.merged.bam
+[2019-03-10 19:34:04,562] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_E03.merged.bam
+[2019-03-10 19:34:04,644] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_E04.merged.bam
+[2019-03-10 19:34:04,727] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: BSS_E01.merged.bam
+[2019-03-10 19:34:05,412] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2019-03-10 19:34:05,423] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2019-03-10 19:34:05,435] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2019-03-10 19:34:05,445] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2019-03-10 19:34:05,454] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2019-03-10 19:34:05,468] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2019-03-10 19:34:05,479] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2019-03-10 19:34:05,490] multiqc                                            [DEBUG  ]  No samples found: quast
+[2019-03-10 19:34:05,501] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2019-03-10 19:34:05,515] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2019-03-10 19:34:05,526] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2019-03-10 19:34:05,552] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2019-03-10 19:34:05,564] multiqc                                            [DEBUG  ]  No samples found: busco
+[2019-03-10 19:34:05,577] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2019-03-10 19:34:05,591] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2019-03-10 19:34:05,601] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2019-03-10 19:34:05,628] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2019-03-10 19:34:05,640] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2019-03-10 19:34:05,651] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2019-03-10 19:34:05,662] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2019-03-10 19:34:05,672] multiqc                                            [DEBUG  ]  No samples found: happy
+[2019-03-10 19:34:05,687] multiqc                                            [DEBUG  ]  No samples found: homer
+[2019-03-10 19:34:05,697] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2019-03-10 19:34:05,709] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2019-03-10 19:34:05,719] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2019-03-10 19:34:05,735] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2019-03-10 19:34:05,745] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2019-03-10 19:34:05,757] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2019-03-10 19:34:05,766] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2019-03-10 19:34:05,777] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2019-03-10 19:34:05,788] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2019-03-10 19:34:05,875] multiqc.modules.picard.picard                      [INFO   ]  Found 63 AlignmentSummaryMetrics reports
+[2019-03-10 19:34:05,876] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_C01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_C01
+[2019-03-10 19:34:05,877] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_D02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_D02
+[2019-03-10 19:34:05,878] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_G04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_G04
+[2019-03-10 19:34:05,879] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_G02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_G02
+[2019-03-10 19:34:05,880] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_F02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_F02
+[2019-03-10 19:34:05,881] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_B01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_B01
+[2019-03-10 19:34:05,882] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_B02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_B02
+[2019-03-10 19:34:05,883] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_F06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_F06
+[2019-03-10 19:34:05,884] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_F03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_F03
+[2019-03-10 19:34:05,885] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_F05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_F05
+[2019-03-10 19:34:05,886] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_A02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_A02
+[2019-03-10 19:34:05,888] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_F04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_F04
+[2019-03-10 19:34:05,889] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_H02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_H02
+[2019-03-10 19:34:05,890] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_H01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_H01
+[2019-03-10 19:34:05,891] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_A01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_A01
+[2019-03-10 19:34:05,892] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_B05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_B05
+[2019-03-10 19:34:05,893] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_B06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_B06
+[2019-03-10 19:34:05,894] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_B02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_B02
+[2019-03-10 19:34:05,895] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A03
+[2019-03-10 19:34:05,896] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A05
+[2019-03-10 19:34:05,897] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A07.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A07
+[2019-03-10 19:34:05,898] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A06
+[2019-03-10 19:34:05,899] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A04
+[2019-03-10 19:34:05,900] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A01
+[2019-03-10 19:34:05,901] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_G01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_G01
+[2019-03-10 19:34:05,902] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_A02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_A02
+[2019-03-10 19:34:05,903] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_B03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_B03
+[2019-03-10 19:34:05,904] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_H04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_H04
+[2019-03-10 19:34:05,905] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_H05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_H05
+[2019-03-10 19:34:05,907] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_G02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_G02
+[2019-03-10 19:34:05,908] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_E01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_E01
+[2019-03-10 19:34:05,909] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_F02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_F02
+[2019-03-10 19:34:05,910] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_H06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_H06
+[2019-03-10 19:34:05,911] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_H02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_H02
+[2019-03-10 19:34:05,912] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_D01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_D01
+[2019-03-10 19:34:05,913] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_H03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_H03
+[2019-03-10 19:34:05,914] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_F01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_F01
+[2019-03-10 19:34:05,915] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_E02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_E02
+[2019-03-10 19:34:05,916] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_G01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_G01
+[2019-03-10 19:34:05,917] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_F01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_F01
+[2019-03-10 19:34:05,918] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_H01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_H01
+[2019-03-10 19:34:05,919] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_G03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_G03
+[2019-03-10 19:34:05,921] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_G06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_G06
+[2019-03-10 19:34:05,922] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_G05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_G05
+[2019-03-10 19:34:05,923] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS2018_C02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS2018_C02
+[2019-03-10 19:34:05,924] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_D03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_D03
+[2019-03-10 19:34:05,925] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_D01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_D01
+[2019-03-10 19:34:05,926] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_C01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_C01
+[2019-03-10 19:34:05,927] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_C05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_C05
+[2019-03-10 19:34:05,928] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_D05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_D05
+[2019-03-10 19:34:05,929] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_D06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_D06
+[2019-03-10 19:34:05,930] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_C02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_C02
+[2019-03-10 19:34:05,931] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_C04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_C04
+[2019-03-10 19:34:05,932] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_C03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_C03
+[2019-03-10 19:34:05,933] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_C06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_C06
+[2019-03-10 19:34:05,935] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_B04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_B04
+[2019-03-10 19:34:05,936] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_D04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_D04
+[2019-03-10 19:34:05,937] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_E05.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_E05
+[2019-03-10 19:34:05,949] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_E06.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_E06
+[2019-03-10 19:34:05,950] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_B01.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_B01
+[2019-03-10 19:34:05,951] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_E02.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_E02
+[2019-03-10 19:34:05,952] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_E03.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_E03
+[2019-03-10 19:34:05,953] multiqc.modules.picard.GcBiasMetrics               [DEBUG  ]  Duplicate sample name found in BSS_E04.merged.picard_metrics.gc_bias_metrics.summary.txt! Overwriting: BSS_E04
+[2019-03-10 19:34:05,969] multiqc.modules.picard.picard                      [INFO   ]  Found 63 GcBiasMetrics reports
+[2019-03-10 19:34:05,996] multiqc.modules.picard.picard                      [INFO   ]  Found 19 MarkDuplicates reports
+[2019-03-10 19:34:06,045] multiqc.modules.picard.picard                      [INFO   ]  Found 63 RnaSeqMetrics reports
+[2019-03-10 19:34:06,063] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2019-03-10 19:34:06,079] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2019-03-10 19:34:06,106] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2019-03-10 19:34:06,122] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2019-03-10 19:34:06,139] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2019-03-10 19:34:06,159] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2019-03-10 19:34:06,171] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2019-03-10 19:34:06,185] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2019-03-10 19:34:06,227] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2019-03-10 19:34:06,252] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2019-03-10 19:34:06,268] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2019-03-10 19:34:06,286] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2019-03-10 19:34:06,298] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2019-03-10 19:34:06,325] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2019-03-10 19:34:06,339] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2019-03-10 19:34:06,360] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2019-03-10 19:34:06,382] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2019-03-10 19:34:06,405] multiqc                                            [DEBUG  ]  No samples found: star
+[2019-03-10 19:34:06,444] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2019-03-10 19:34:06,456] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2019-03-10 19:34:06,471] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2019-03-10 19:34:06,487] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2019-03-10 19:34:06,500] multiqc                                            [DEBUG  ]  No samples found: kat
+[2019-03-10 19:34:06,513] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2019-03-10 19:34:06,524] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2019-03-10 19:34:06,536] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2019-03-10 19:34:06,551] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2019-03-10 19:34:06,564] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2019-03-10 19:34:06,575] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2019-03-10 19:34:06,587] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2019-03-10 19:34:06,604] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2019-03-10 19:34:06,620] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2019-03-10 19:34:06,634] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2019-03-10 19:34:06,649] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2019-03-10 19:34:06,671] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2019-03-10 19:34:06,693] multiqc                                            [DEBUG  ]  No samples found: fastqc
+[2019-03-10 19:34:06,707] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2019-03-10 19:34:06,725] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2019-03-10 19:34:06,746] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2019-03-10 19:34:06,761] multiqc                                            [DEBUG  ]  No samples found: interop
+[2019-03-10 19:34:06,779] multiqc                                            [DEBUG  ]  No samples found: flash
+[2019-03-10 19:34:06,841] multiqc                                            [INFO   ]  Compressing plot data
+[2019-03-10 19:34:07,307] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2019-03-10 19:34:07,307] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2019-03-10 19:34:07,313] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_picard_AlignmentSummaryMetrics.txt' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,322] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_picard_gcbias.txt' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,329] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_picard_dups.txt' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,336] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_picard_RnaSeqMetrics.txt' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,345] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_general_stats.txt' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,352] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_sources.txt' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,361] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpr7e1zuon/multiqc_data/multiqc_data.json' to '/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Blocks/pipeline/bams/star/multiqc_data'
+[2019-03-10 19:34:07,661] multiqc                                            [INFO   ]  MultiQC complete
