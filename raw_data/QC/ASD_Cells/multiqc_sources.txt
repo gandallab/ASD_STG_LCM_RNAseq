@@ -8,6 +8,7 @@ Picard	AlignmentSummaryMetrics	2012	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM
 Picard	AlignmentSummaryMetrics	2014	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/2014/2014.merged.picard_metrics.alignment_metrics.txt
 Picard	AlignmentSummaryMetrics	AOE02	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/AOE02/AOE02.merged.picard_metrics.alignment_metrics.txt
 Picard	AlignmentSummaryMetrics	5387N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/5387N/5387N.merged.picard_metrics.alignment_metrics.txt
+Picard	AlignmentSummaryMetrics	6078N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6078N/6078N.merged.picard_metrics.alignment_metrics.txt
 Picard	AlignmentSummaryMetrics	1028N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/1028N/1028N.merged.picard_metrics.alignment_metrics.txt
 Picard	AlignmentSummaryMetrics	6221N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6221N/6221N.merged.picard_metrics.alignment_metrics.txt
 Picard	AlignmentSummaryMetrics	4287N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/4287N/4287N.merged.picard_metrics.alignment_metrics.txt
@@ -75,6 +76,7 @@ Picard	GcBiasDetailMetrics	2012	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNA
 Picard	GcBiasDetailMetrics	2014	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/2014/2014.merged.picard_metrics.gc_bias_metrics.txt
 Picard	GcBiasDetailMetrics	AOE02	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/AOE02/AOE02.merged.picard_metrics.gc_bias_metrics.txt
 Picard	GcBiasDetailMetrics	5387N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/5387N/5387N.merged.picard_metrics.gc_bias_metrics.txt
+Picard	GcBiasDetailMetrics	6078N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6078N/6078N.merged.picard_metrics.gc_bias_metrics.txt
 Picard	GcBiasDetailMetrics	1028N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/1028N/1028N.merged.picard_metrics.gc_bias_metrics.txt
 Picard	GcBiasDetailMetrics	6221N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6221N/6221N.merged.picard_metrics.gc_bias_metrics.txt
 Picard	GcBiasDetailMetrics	4287N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/4287N/4287N.merged.picard_metrics.gc_bias_metrics.txt
@@ -142,6 +144,7 @@ Picard	GcBiasSummaryMetrics	2012	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RN
 Picard	GcBiasSummaryMetrics	2014	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/2014/2014.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	AOE02	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/AOE02/AOE02.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	5387N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/5387N/5387N.merged.picard_metrics.gc_bias_metrics.summary.txt
+Picard	GcBiasSummaryMetrics	6078N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6078N/6078N.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	1028N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/1028N/1028N.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	6221N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6221N/6221N.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	4287N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/4287N/4287N.merged.picard_metrics.gc_bias_metrics.summary.txt
@@ -200,6 +203,7 @@ Picard	GcBiasSummaryMetrics	1841Oligo	/u/project/gandalm/shared/RNAseq/ASD_STG_L
 Picard	GcBiasSummaryMetrics	6677Oligo	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6677Oligo/6677Oligo.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	AOH01	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/AOH01/AOH01.merged.picard_metrics.gc_bias_metrics.summary.txt
 Picard	GcBiasSummaryMetrics	4498N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/4498N/4498N.merged.picard_metrics.gc_bias_metrics.summary.txt
+Picard	DuplicationMetrics	8589N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/8589N/8589N.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	7090N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/7090N/7090N.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	7090Oligo	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/7090Oligo/7090Oligo.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	177oldsamplerepeat	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/177oldsamplerepeat/177oldsamplerepeat.merged.picard_metrics.duplication_metrics.txt
@@ -208,6 +212,7 @@ Picard	DuplicationMetrics	2012	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAs
 Picard	DuplicationMetrics	2014	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/2014/2014.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	AOE02	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/AOE02/AOE02.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	5387N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/5387N/5387N.merged.picard_metrics.duplication_metrics.txt
+Picard	DuplicationMetrics	6078N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6078N/6078N.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	1028N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/1028N/1028N.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	6221N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6221N/6221N.merged.picard_metrics.duplication_metrics.txt
 Picard	DuplicationMetrics	4287N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/4287N/4287N.merged.picard_metrics.duplication_metrics.txt
@@ -275,6 +280,7 @@ Picard	RnaSeqMetrics	2012	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/AS
 Picard	RnaSeqMetrics	2014	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/2014/2014.merged.picard_metrics.rna_seq_metrics.txt
 Picard	RnaSeqMetrics	AOE02	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/AOE02/AOE02.merged.picard_metrics.rna_seq_metrics.txt
 Picard	RnaSeqMetrics	5387N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/5387N/5387N.merged.picard_metrics.rna_seq_metrics.txt
+Picard	RnaSeqMetrics	6078N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6078N/6078N.merged.picard_metrics.rna_seq_metrics.txt
 Picard	RnaSeqMetrics	1028N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/1028N/1028N.merged.picard_metrics.rna_seq_metrics.txt
 Picard	RnaSeqMetrics	6221N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/6221N/6221N.merged.picard_metrics.rna_seq_metrics.txt
 Picard	RnaSeqMetrics	4287N	/u/project/gandalm/shared/RNAseq/ASD_STG_LCM_RNAseq/ASD_Cells/pipeline/bams/star/sample_merged/4287N/4287N.merged.picard_metrics.rna_seq_metrics.txt
