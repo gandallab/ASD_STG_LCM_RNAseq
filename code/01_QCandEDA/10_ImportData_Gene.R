@@ -1,6 +1,6 @@
 options(stringsAsFactors = F)
 
-
+library(dplyr)
 library(readr)
 library(rtracklayer)
 library(pheatmap)
@@ -30,6 +30,13 @@ datMeta = read.csv("./raw_data/metaData/Metadata_ASD_CellsandBlocks.csv")
 rownames(datMeta)= datMeta$Sample
 datMeta_blocks = datMeta[match(colnames(datExpr_blocks), datMeta$Sample),]
 datMeta_cells = datMeta[match(colnames(datExpr_cells), datMeta$Sample),]
+
+
+# Split cells into Neurons and Oligos
+datMeta_neuron = datMeta_cells %>% filter(Type=="Neuron")
+datExpr_neuron = datExpr_cells[,match(datMeta_neuron$Sample, colnames(datExpr_cells))]
+datMeta_oligo = datMeta_cells %>% filter(Type=="Oligo")
+datExpr_oligo = datExpr_cells[,match(datMeta_oligo$Sample, colnames(datExpr_cells))]
 
 
 # Load Seq Data for Blocks
@@ -70,23 +77,44 @@ datSeq_cells = merge(datSeq_cells, read.delim("./raw_data/QC/ASD_Cells/multiqc_p
 rownames(datSeq_cells) = datSeq_cells$Sample
 datSeq_cells = datSeq_cells[match(rownames(datMeta_cells), rownames(datSeq_cells)),]
 
-# Remove columns with no variance or non-numeric data
-v = apply(datSeq_cells, 2, var)
-datSeq_cells = datSeq_cells[,!is.na(v) & v>0]
 
-pheatmap(cor(datSeq_cells, method='spearman'),fontsize = 6)
-pcs = prcomp(datSeq_cells,center = T, scale. = T)
+datSeq_neuron = datSeq_cells[match(datMeta_neuron$Sample, rownames(datSeq_cells)),]
+datSeq_oligo = datSeq_cells[match(datMeta_oligo$Sample, rownames(datSeq_cells)),]
+
+# Neuron seqPCs
+# Remove columns with no variance or non-numeric data
+v = apply(datSeq_neuron, 2, var)
+datSeq_neuron = datSeq_neuron[,!is.na(v) & v>0]
+pheatmap(cor(datSeq_neuron, method='spearman'),fontsize = 6)
+pcs = prcomp(datSeq_neuron,center = T, scale. = T)
 screeplot(pcs,type = 'lines')
 colnames(pcs$x) = paste0("seq", colnames(pcs$x))
-datMeta_cells = cbind(datMeta_cells, pcs$x[,1:10])
-datMeta_cells = cbind(datMeta_cells, datSeq_cells)
-rm(datSeq_blocks, pcs)
+datMeta_neuron = cbind(datMeta_neuron, pcs$x[,1:10])
+datMeta_neuron = cbind(datMeta_neuron, datSeq_neuron)
+rm(datSeq_neuron, pcs)
+
+# Oligo seqPCs
+v = apply(datSeq_oligo, 2, var)
+datSeq_oligo = datSeq_oligo[,!is.na(v) & v>0]
+pheatmap(cor(datSeq_oligo, method='spearman'),fontsize = 6)
+pcs = prcomp(datSeq_oligo,center = T, scale. = T)
+screeplot(pcs,type = 'lines')
+colnames(pcs$x) = paste0("seq", colnames(pcs$x))
+datMeta_oligo = cbind(datMeta_oligo, pcs$x[,1:10])
+datMeta_oligo = cbind(datMeta_oligo, datSeq_oligo)
+rm(datSeq_oligo, pcs)
+rm(datSeq_cells)
 
 
-se_cells = SummarizedExperiment(assays=list(counts=as.matrix(datExpr_cells)),
-                                rowData = annot, colData = datMeta_cells)
-save(file='./working_data/summarizedExperiment/se_cells.RData',se_cells)
 
+
+se_neuron = SummarizedExperiment(assays=list(counts=as.matrix(datExpr_neuron)),
+                                rowData = annot, colData = datMeta_neuron)
+save(file='./working_data/summarizedExperiment/se_neuron.RData',se_neuron)
+
+se_oligo = SummarizedExperiment(assays=list(counts=as.matrix(datExpr_oligo)),
+                                 rowData = annot, colData = datMeta_oligo)
+save(file='./working_data/summarizedExperiment/se_oligo.RData',se_oligo)
 
 se_blocks = SummarizedExperiment(assays=list(counts=as.matrix(datExpr_blocks)),
                                 rowData = annot, colData = datMeta_blocks)

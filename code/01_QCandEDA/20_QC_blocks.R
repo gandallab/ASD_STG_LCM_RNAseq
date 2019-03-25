@@ -79,10 +79,10 @@ pairs(mds, col=numbers2colors(se_blocks$PMI), main="PMI", pch=19)
 pairs(mds, col=numbers2colors(se_blocks$seqPC1), main="seqPC1", pch=19)
 
 pairs(mds, col=factor(se_blocks$Sex), main="Sex", pch=19)
-par(xpd = TRUE,oma=c(1,1,1,1)); legend('bottomright', levels(factor(se_blocks$Sex)),fill=1:2,cex=.5)
-
 pairs(mds, col=factor(se_blocks$RNAseqPool), main="RNAseqPool", pch=19)
 
+
+save(file="working_data/summarizedExperiment/se_blocks_CPM_outlierRemoved.RData", se_blocks)
 
 
 
