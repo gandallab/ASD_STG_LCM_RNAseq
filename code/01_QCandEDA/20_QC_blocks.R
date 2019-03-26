@@ -38,6 +38,7 @@ par(xpd = TRUE,oma=c(1,1,1,1)); legend('bottomright', levels(factor(se_blocks$Di
 genes_to_keep = filterByExpr(DGEList(assays(se_blocks)$counts))
 table(genes_to_keep)
 
+
 datExpr.norm = cpm(calcNormFactors(DGEList(assays(se_blocks)$counts[genes_to_keep, ],), method = 'TMM'), log = TRUE)
 normadj <- 0.5 + 0.5*bicor(datExpr.norm)
 netsummary <- fundamentalNetworkConcepts(normadj)
