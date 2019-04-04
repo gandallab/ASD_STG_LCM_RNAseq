@@ -1,0 +1,119 @@
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> tmp=.libPaths()
+> .libPaths(tmp[c(2,4)])
+> rm(list=ls());gc()
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 252011 13.5     460000 24.6   350000 18.7
+Vcells 442034  3.4    1023718  7.9   786428  6.0
+> 
+> library(WGCNA)
+Loading required package: dynamicTreeCut
+Loading required package: fastcluster
+
+Attaching package: 'fastcluster'
+
+The following object is masked from 'package:stats':
+
+    hclust
+
+
+==========================================================================
+*
+*  Package WGCNA 1.61 loaded.
+*
+*    Important note: It appears that your system supports multi-threading,
+*    but it is not enabled within WGCNA in R. 
+*    To allow multi-threading within WGCNA with all available cores, use 
+*
+*          allowWGCNAThreads()
+*
+*    within R. Use disableWGCNAThreads() to disable threading if necessary.
+*    Alternatively, set the following environment variable on your system:
+*
+*          ALLOW_WGCNA_THREADS=<number_of_processors>
+*
+*    for example 
+*
+*          ALLOW_WGCNA_THREADS=24
+*
+*    To set the environment variable in linux bash shell, type 
+*
+*           export ALLOW_WGCNA_THREADS=24
+*
+*     before running R. Other operating systems or shells will
+*     have a similar command to achieve the same aim.
+*
+==========================================================================
+
+
+
+Attaching package: 'WGCNA'
+
+The following object is masked from 'package:stats':
+
+    cor
+
+> enableWGCNAThreads()
+Allowing parallel execution with up to 23 working processes.
+> allowWGCNAThreads()
+Allowing multi-threading with up to 24 threads.
+> options(stringsAsFactors=FALSE)
+> load("/oasis/scratch/comet/paz008/temp_project/wgcna002/voom.forWGCNA.input.blocks.RData")
+> powers = c(seq(1,9,by=1),seq(10,30,by=2))
+> sft = pickSoftThreshold(data= t(datExpr), networkType = "signed", corFnc="bicor",verbose=2,powerVector=powers,blockSize = 30000)
+ pickSoftThreshold: calculating connectivity for given powers...
+   ..working on genes 1 through 27919 of 27919
+   Power SFT.R.sq slope truncated.R.sq  mean.k. median.k.  max.k.
+1      1   0.0245 -9.98          0.959 14000.00  1.40e+04 14800.0
+2      2   0.0840 -8.60          0.928  7330.00  7.30e+03  8170.0
+3      3   0.3800 -9.15          0.921  3950.00  3.91e+03  4920.0
+4      4   0.6700 -7.41          0.928  2200.00  2.15e+03  3190.0
+5      5   0.7970 -6.01          0.935  1260.00  1.22e+03  2220.0
+6      6   0.8640 -4.93          0.946   744.00  7.02e+02  1620.0
+7      7   0.8940 -4.19          0.949   451.00  4.14e+02  1230.0
+8      8   0.9170 -3.63          0.956   282.00  2.49e+02   961.0
+9      9   0.9240 -3.27          0.957   180.00  1.52e+02   770.0
+10    10   0.9200 -3.00          0.950   119.00  9.45e+01   630.0
+11    12   0.9250 -2.58          0.953    55.10  3.82e+01   440.0
+12    14   0.9240 -2.31          0.957    28.00  1.63e+01   321.0
+13    16   0.9260 -2.10          0.963    15.50  7.25e+00   241.0
+14    18   0.9310 -1.94          0.974     9.15  3.36e+00   186.0
+15    20   0.9290 -1.85          0.979     5.74  1.61e+00   147.0
+16    22   0.9290 -1.77          0.983     3.78  7.94e-01   119.0
+17    24   0.9280 -1.71          0.986     2.60  4.03e-01    96.9
+18    26   0.9300 -1.66          0.989     1.84  2.09e-01    79.8
+19    28   0.9190 -1.64          0.984     1.34  1.11e-01    66.4
+20    30   0.9200 -1.61          0.988     1.00  5.98e-02    55.6
+> pdf("sft.pdf")
+> par(mfrow=c(2,1))
+> plot(sft$fitIndices[,1], -sign(sft$fitIndices[,3])*sft$fitIndices[,2], xlab="Soft Thresh Power", ylab="Scale free R^2",type="n")
+> text(sft$fitIndices[,1], -sign(sft$fitIndices[,3])*sft$fitIndices[,2], labels = powers, cex = 0.7, col="red",  xlab="Soft Thresh Power", ylab="Scale free R^2")
+> abline(h=0.8, col="black")
+> plot(sft$fitIndices[,1], sft$fitIndices[,5], xlab = "Soft threshold power", ylab = "Mean connectivity", type = "n")
+> text(sft$fitIndices[,1], sft$fitIndices[,5], labels = powers, cex = 0.7, col="black")
+> dev.off()
+null device 
+          1 
+> save(sft,file="sft.RData")
+> 
+> proc.time()
+   user  system elapsed 
+236.230  64.871 260.458 
