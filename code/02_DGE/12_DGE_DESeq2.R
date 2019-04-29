@@ -32,7 +32,7 @@ datMeta=colData(se_neuron)
 datMeta$Age = datMeta$Age + 0.00000001
 dds=DESeqDataSetFromMatrix(countData = round(assays(se_neuron)$counts),
                            colData = datMeta,
-                           design = ~Diagnosis + Sex + Age + seqPC2 + seqPC3)
+                           design = ~Diagnosis + Sex + Age + seqPC1 + seqPC2 + seqPC3)
 dds <- DESeq(dds)
 resultsNames(dds)
 dge.deseq2 <- results(dds, name="Diagnosis_Autism_vs_Control")
