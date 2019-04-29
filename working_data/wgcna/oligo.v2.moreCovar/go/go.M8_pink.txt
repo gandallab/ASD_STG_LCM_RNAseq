@@ -1,0 +1,9 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.00108	4	3	2	0.667	0.5	GO:0021785	BP	4	branchiomotor neuron axon guidance	1	ENSG00000076356,ENSG00000114554
+1	TRUE	0.00161	10	3	2	0.667	0.2	GO:0048841	BP	10	regulation of axon extension involved in axon guidance	1	ENSG00000076356,ENSG00000114554
+1	TRUE	0.00161	7	3	2	0.667	0.286	GO:0002116	CC	8	semaphorin receptor complex	1	ENSG00000076356,ENSG00000114554
+1	TRUE	0.00161	8	3	2	0.667	0.25	GO:0017154	MF	9	semaphorin receptor activity	1	ENSG00000076356,ENSG00000114554
+1	TRUE	0.00763	39	19	3	0.158	0.077	GO:0097194	BP	2	execution phase of apoptosis	1	ENSG00000110514,ENSG00000149273,ENSG00000183773
+1	TRUE	0.0116	2	84	2	0.024	1	GO:0045763	BP	13	negative regulation of cellular amino acid metabolic process	1	ENSG00000058668,ENSG00000167654
+1	TRUE	0.0263	3	84	2	0.024	0.667	GO:0000820	BP	7	regulation of glutamine family amino acid metabolic process	1	ENSG00000058668,ENSG00000167654
+1	TRUE	0.0383	46	6	2	0.333	0.043	GO:0000118	CC	1	histone deacetylase complex	1	ENSG00000068024,ENSG00000196498

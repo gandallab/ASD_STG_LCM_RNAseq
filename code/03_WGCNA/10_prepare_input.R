@@ -15,22 +15,30 @@ se_neuron$Diagnosis = factor(se_neuron$Diagnosis, levels= c("Control", "Autism")
 
 # blocks
 datMeta=as.data.frame(colData(se_blocks))
-X = model.matrix(~Diagnosis + Sex + Age + seqPC2 + seqPC3,colData(se_blocks))
+X = model.matrix(~Diagnosis + Sex + Age + seqPC1 + seqPC2 + seqPC3,colData(se_blocks))
 Y = assays(se_blocks)$log2CPM
 beta = (solve(t(X)%*%X)%*%t(X))%*%t(Y)
 #datExpr = Y - t(as.matrix(X[,4]) %*% t(as.matrix(beta[4,])))
 datExpr = Y - t(X[,c(5:ncol(X))] %*% beta[c(5:nrow(beta)),])
 table(rownames(datMeta) == colnames(datExpr))
-save(file = "./working_data/wgcna/voom.forWGCNA.input.blocks.RData",datExpr,datMeta)
+save(file = "./working_data/wgcna/voom.forWGCNA.input.blocks.v2.RData",datExpr,datMeta)
 
 # neuron
 datMeta=as.data.frame(colData(se_neuron))
-datExpr = assays(se_neuron)$log2CPM
+X = model.matrix(~Diagnosis + Sex + Age + seqPC1 + seqPC2 + seqPC3,colData(se_neuron))
+Y = assays(se_neuron)$log2CPM
+beta = (solve(t(X)%*%X)%*%t(X))%*%t(Y)
+#datExpr = Y - t(as.matrix(X[,4]) %*% t(as.matrix(beta[4,])))
+datExpr = Y - t(X[,c(5:ncol(X))] %*% beta[c(5:nrow(beta)),])
 table(rownames(datMeta) == colnames(datExpr))
-save(file = "./working_data/wgcna/voom.forWGCNA.input.neuron.RData",datExpr,datMeta)
+save(file = "./working_data/wgcna/voom.forWGCNA.input.neuron.v2.RData",datExpr,datMeta)
 
 # oligo
 datMeta=as.data.frame(colData(se_oligo))
-datExpr = assays(se_oligo)$log2CPM
+X = model.matrix(~Diagnosis + Sex + Age + seqPC1 + seqPC2,colData(se_oligo))
+Y = assays(se_oligo)$log2CPM
+beta = (solve(t(X)%*%X)%*%t(X))%*%t(Y)
+#datExpr = Y - t(as.matrix(X[,4]) %*% t(as.matrix(beta[4,])))
+datExpr = Y - t(X[,c(5:ncol(X))] %*% beta[c(5:nrow(beta)),])
 table(rownames(datMeta) == colnames(datExpr))
-save(file = "./working_data/wgcna/voom.forWGCNA.input.oligo.RData",datExpr,datMeta)
+save(file = "./working_data/wgcna/voom.forWGCNA.input.oligo.v2.RData",datExpr,datMeta)

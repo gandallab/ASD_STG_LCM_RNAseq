@@ -1,0 +1,9 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0483	8	35	2	0.057	0.25	GO:1904590	BP	3	negative regulation of protein import	1	ENSG00000157782,ENSG00000183087
+1	TRUE	0.0483	44	54	3	0.056	0.068	GO:0032387	BP	8	negative regulation of intracellular transport	1	ENSG00000132376,ENSG00000157782,ENSG00000183087
+1	TRUE	0.0483	926	6	4	0.667	0.004	GO:0051704	BP	6	multi-organism process	1	ENSG00000008735,ENSG00000174903,ENSG00000182473,ENSG00000196313
+1	TRUE	0.0483	105	44	4	0.091	0.038	GO:0006606	BP	4	protein import into nucleus	1	ENSG00000133612,ENSG00000157782,ENSG00000183087,ENSG00000196313
+1	TRUE	0.0483	8	35	2	0.057	0.25	GO:0042308	BP	7	negative regulation of protein import into nucleus	1	ENSG00000157782,ENSG00000183087
+1	TRUE	0.0483	54	35	3	0.086	0.056	GO:0071322	BP	2	cellular response to carbohydrate stimulus	1	ENSG00000009950,ENSG00000156711,ENSG00000183087
+1	TRUE	0.0483	11	42	2	0.048	0.182	GO:0045240	CC	1	dihydrolipoyl dehydrogenase complex	1	ENSG00000108773,ENSG00000197444
+1	TRUE	0.0483	24	15	2	0.133	0.083	GO:0008139	MF	5	nuclear localization sequence binding	1	ENSG00000157782,ENSG00000196313

@@ -1,0 +1,193 @@
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> tmp=.libPaths()
+> .libPaths(tmp[c(2,4)])
+> rm(list=ls());gc()
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 252011 13.5     460000 24.6   350000 18.7
+Vcells 442034  3.4    1023718  7.9   786428  6.0
+> 
+> library(WGCNA)
+Loading required package: dynamicTreeCut
+Loading required package: fastcluster
+
+Attaching package: 'fastcluster'
+
+The following object is masked from 'package:stats':
+
+    hclust
+
+
+==========================================================================
+*
+*  Package WGCNA 1.61 loaded.
+*
+*    Important note: It appears that your system supports multi-threading,
+*    but it is not enabled within WGCNA in R. 
+*    To allow multi-threading within WGCNA with all available cores, use 
+*
+*          allowWGCNAThreads()
+*
+*    within R. Use disableWGCNAThreads() to disable threading if necessary.
+*    Alternatively, set the following environment variable on your system:
+*
+*          ALLOW_WGCNA_THREADS=<number_of_processors>
+*
+*    for example 
+*
+*          ALLOW_WGCNA_THREADS=24
+*
+*    To set the environment variable in linux bash shell, type 
+*
+*           export ALLOW_WGCNA_THREADS=24
+*
+*     before running R. Other operating systems or shells will
+*     have a similar command to achieve the same aim.
+*
+==========================================================================
+
+
+
+Attaching package: 'WGCNA'
+
+The following object is masked from 'package:stats':
+
+    cor
+
+> enableWGCNAThreads()
+Allowing parallel execution with up to 23 working processes.
+> allowWGCNAThreads()
+Allowing multi-threading with up to 24 threads.
+> options(stringsAsFactors=FALSE)
+> load("/oasis/scratch/comet/paz008/temp_project/wgcna003/voom.forWGCNA.input.neuron.v2.RData")
+> 
+> net = blockwiseModules(datExpr=t(datExpr), maxBlockSize=30000,networkType="signed",corType="bicor", power = 7, mergeCutHeight= 0.1, minModuleSize= 40, pamStage=TRUE, reassignThreshold=1e-6, saveTOMFileBase="neuron.bicor.tom", saveTOMs=TRUE, verbose = 5, deepSplit=2,nThreads=12)
+ Calculating module eigengenes block-wise from all genes
+   Flagging genes and samples with too many missing values...
+    ..step 1
+ ..Working on block 1 .
+    TOM calculation: adjacency..
+    ..will use 12 parallel threads.
+     Fraction of slow calculations: 0.000000
+    ..connectivity..
+    ..matrix multiplication..
+    ..normalization..
+    ..done.
+   ..saving TOM for block 1 into file neuron.bicor.tom-block.1.RData
+ ....clustering..
+ ....detecting modules..
+     ..done.
+ ....calculating module eigengenes..
+     moduleEigengenes : Working on ME for module 1
+     moduleEigengenes : Working on ME for module 2
+     moduleEigengenes : Working on ME for module 3
+     moduleEigengenes : Working on ME for module 4
+     moduleEigengenes : Working on ME for module 5
+     moduleEigengenes : Working on ME for module 6
+     moduleEigengenes : Working on ME for module 7
+     moduleEigengenes : Working on ME for module 8
+     moduleEigengenes : Working on ME for module 9
+     moduleEigengenes : Working on ME for module 10
+     moduleEigengenes : Working on ME for module 11
+     moduleEigengenes : Working on ME for module 12
+     moduleEigengenes : Working on ME for module 13
+     moduleEigengenes : Working on ME for module 14
+     moduleEigengenes : Working on ME for module 15
+     moduleEigengenes : Working on ME for module 16
+     moduleEigengenes : Working on ME for module 17
+     moduleEigengenes : Working on ME for module 18
+     moduleEigengenes : Working on ME for module 19
+     moduleEigengenes : Working on ME for module 20
+     moduleEigengenes : Working on ME for module 21
+     moduleEigengenes : Working on ME for module 22
+     moduleEigengenes : Working on ME for module 23
+     moduleEigengenes : Working on ME for module 24
+     moduleEigengenes : Working on ME for module 25
+     moduleEigengenes : Working on ME for module 26
+     moduleEigengenes : Working on ME for module 27
+     moduleEigengenes : Working on ME for module 28
+     moduleEigengenes : Working on ME for module 29
+     moduleEigengenes : Working on ME for module 30
+     moduleEigengenes : Working on ME for module 31
+     moduleEigengenes : Working on ME for module 32
+     moduleEigengenes : Working on ME for module 33
+     moduleEigengenes : Working on ME for module 34
+     moduleEigengenes : Working on ME for module 35
+     moduleEigengenes : Working on ME for module 36
+     moduleEigengenes : Working on ME for module 37
+ ....checking modules for statistical meaningfulness..
+     ..removing 1191 genes from module 1 because their KME is too low.
+     ..removing 601 genes from module 2 because their KME is too low.
+     ..removing 309 genes from module 3 because their KME is too low.
+     ..removing 511 genes from module 4 because their KME is too low.
+     ..removing 586 genes from module 5 because their KME is too low.
+     ..removing 205 genes from module 6 because their KME is too low.
+     ..removing 223 genes from module 7 because their KME is too low.
+     ..removing 394 genes from module 8 because their KME is too low.
+     ..removing 91 genes from module 9 because their KME is too low.
+     ..removing 46 genes from module 10 because their KME is too low.
+     ..removing 68 genes from module 11 because their KME is too low.
+     ..removing 80 genes from module 12 because their KME is too low.
+     ..removing 76 genes from module 13 because their KME is too low.
+     ..removing 56 genes from module 14 because their KME is too low.
+     ..removing 58 genes from module 15 because their KME is too low.
+     ..removing 29 genes from module 16 because their KME is too low.
+     ..removing 18 genes from module 17 because their KME is too low.
+     ..removing 79 genes from module 18 because their KME is too low.
+     ..removing 31 genes from module 19 because their KME is too low.
+     ..removing 110 genes from module 20 because their KME is too low.
+     ..removing 87 genes from module 21 because their KME is too low.
+     ..removing 47 genes from module 22 because their KME is too low.
+     ..removing 82 genes from module 23 because their KME is too low.
+     ..removing 50 genes from module 24 because their KME is too low.
+     ..removing 16 genes from module 25 because their KME is too low.
+     ..removing 24 genes from module 26 because their KME is too low.
+    ..deleting module 27: of 197 total genes in the module
+       only 8 have the requisite high correlation with the eigengene.
+     ..removing 37 genes from module 28 because their KME is too low.
+     ..removing 13 genes from module 29 because their KME is too low.
+     ..removing 19 genes from module 30 because their KME is too low.
+     ..removing 34 genes from module 31 because their KME is too low.
+     ..removing 12 genes from module 32 because their KME is too low.
+     ..removing 8 genes from module 33 because their KME is too low.
+     ..removing 19 genes from module 34 because their KME is too low.
+     ..removing 3 genes from module 35 because their KME is too low.
+     ..removing 11 genes from module 36 because their KME is too low.
+     ..removing 1 genes from module 37 because their KME is too low.
+  ..reassigning 3 genes from module 1 to modules with higher KME.
+  ..reassigning 2 genes from module 3 to modules with higher KME.
+  ..reassigning 1 genes from module 6 to modules with higher KME.
+  ..reassigning 2 genes from module 7 to modules with higher KME.
+  ..reassigning 3 genes from module 10 to modules with higher KME.
+  ..reassigning 1 genes from module 17 to modules with higher KME.
+ ..merging modules that are too close..
+     mergeCloseModules: Merging modules whose distance is less than 0.1
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 37 module eigengenes in given set.
+       Calculating new MEs...
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 37 module eigengenes in given set.
+> save(file = "neuron.bicor.net.RData",net)
+> 
+> proc.time()
+   user  system elapsed 
+650.217  99.711 393.448 

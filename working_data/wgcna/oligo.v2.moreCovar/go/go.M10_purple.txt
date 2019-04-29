@@ -1,0 +1,2 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0253	18	52	3	0.058	0.167	GO:0017091	MF	1	AU-rich element binding	1	ENSG00000066044,ENSG00000075914,ENSG00000196361

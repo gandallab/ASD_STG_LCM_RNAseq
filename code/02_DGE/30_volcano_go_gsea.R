@@ -17,7 +17,7 @@ annot=read.delim("D:/references/gencode.v19.gene.name.txt")
 
 
 # blocks
-load("working_data/dge/dge.blocks.deseq2.RData")
+load("working_data/dge/dge.blocks.deseq2.v2.moreCovariates.RData")
 dat=as.data.frame(dge.deseq2)
 dat=dat[complete.cases(dat),]
 sigdat=dat[abs(dat$log2FoldChange) >= 0.58 & dat$padj < 0.05,]
@@ -36,9 +36,10 @@ ggplot()+geom_point(data=sigdat,aes(log2FoldChange,-log10(padj)),size=2,color="b
   theme_classic()+
   theme(text = element_text(family = "Arial"))
 
-graph2ppt(file="working_data/figures/blocks.dge.plots.pptx",width=7.6,height=7.1)
+graph2ppt(file="working_data/figures/blocks.dge.plots.pptx",width=7.6,height=7.1,append=TRUE)
 
 outwb=createWorkbook()
+sigdat=sigdat[order(sigdat$log2FoldChange,decreasing = T),]
 goup = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange > 0], 
                max_set_size = 1000,
                min_isect_size = 2,
@@ -47,11 +48,12 @@ goup = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange > 0],
                hier_filtering = "moderate", 
                custom_bg = rownames(dge.deseq2), 
                src_filter = c("GO","KEGG"),
-               ordered_query = F)
+               ordered_query = T)
 goup=goup[order(goup$p.value),]
 sheet=createSheet(outwb,sheetName = "blocks.up")
 addDataFrame(goup,sheet,row.names = F)
 
+sigdat=sigdat[order(sigdat$log2FoldChange,decreasing = F),]
 godown = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange < 0], 
                  max_set_size = 1000,
                  min_isect_size = 2,
@@ -65,10 +67,11 @@ godown=godown[order(godown$p.value),]
 sheet=createSheet(outwb,sheetName = "blocks.down")
 addDataFrame(godown,sheet,row.names = F)
 
-saveWorkbook(outwb,file = "working_data/dge/dge.go.blocks.xlsx")
+saveWorkbook(outwb,file = "working_data/dge/dge.go.blocks.v2.moreCovariates.xlsx")
 
-goup=read.xlsx(file = "working_data/dge/dge.go.blocks.xlsx",sheetName = "blocks.up")
-godown=read.xlsx(file = "working_data/dge/dge.go.blocks.xlsx",sheetName = "blocks.down")
+
+goup=read.xlsx(file = "working_data/dge/dge.go.blocks.v2.moreCovariates.xlsx",sheetName = "blocks.up")
+godown=read.xlsx(file = "working_data/dge/dge.go.blocks.v2.moreCovariates.xlsx",sheetName = "blocks.down")
 goup$FDR=-log10(goup$p.value);goup=goup[1:10,];goup$dirc="up"
 godown$FDR=log10(godown$p.value);godown=godown[1:10,];godown$dirc="down"
 go=rbind(goup,godown);go=go[order(go$FDR,decreasing = T),]
@@ -124,7 +127,7 @@ graph2ppt(file="working_data/figures/blocks.dge.plots.pptx",width=10.5,height=7.
 
 
 # neuron
-load("working_data/dge/dge.neuron.deseq2.RData")
+load("working_data/dge/dge.neuron.deseq2.v2.moreCovariates.RData")
 dat=as.data.frame(dge.deseq2)
 dat=dat[complete.cases(dat),]
 sigdat=dat[abs(dat$log2FoldChange) >= 0.58 & dat$padj < 0.05,]
@@ -143,9 +146,10 @@ ggplot()+geom_point(data=sigdat,aes(log2FoldChange,-log10(padj)),size=2,color="b
   theme_classic()+
   theme(text = element_text(family = "Arial"))
 
-graph2ppt(file="working_data/figures/neuron.dge.plots.pptx",width=7.6,height=7.1)
+graph2ppt(file="working_data/figures/neuron.dge.plots.pptx",width=7.6,height=7.1,append=TRUE)
 
 outwb=createWorkbook()
+sigdat=sigdat[order(sigdat$log2FoldChange,decreasing = T),]
 goup = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange > 0], 
                  max_set_size = 1000,
                  min_isect_size = 2,
@@ -154,11 +158,12 @@ goup = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange > 0],
                  hier_filtering = "moderate", 
                  custom_bg = rownames(dge.deseq2), 
                  src_filter = c("GO","KEGG"),
-                 ordered_query = F)
+                 ordered_query = T)
 goup=goup[order(goup$p.value),]
 sheet=createSheet(outwb,sheetName = "neuron.up")
 addDataFrame(goup,sheet,row.names = F)
 
+sigdat=sigdat[order(sigdat$log2FoldChange,decreasing = F),]
 godown = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange < 0], 
                    max_set_size = 1000,
                    min_isect_size = 2,
@@ -167,17 +172,17 @@ godown = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange < 0],
                    hier_filtering = "moderate", 
                    custom_bg = rownames(dge.deseq2), 
                    src_filter = c("GO","KEGG"),
-                   ordered_query = F)
+                   ordered_query = T)
 godown=godown[order(godown$p.value),]
 sheet=createSheet(outwb,sheetName = "neuron.down")
 addDataFrame(godown,sheet,row.names = F)
 
-saveWorkbook(outwb,file = "working_data/dge/dge.go.neuron.xlsx")
+saveWorkbook(outwb,file = "working_data/dge/dge.go.neuron.v2.moreCovariates.xlsx")
 
-goup=read.xlsx(file = "working_data/dge/dge.go.neuron.xlsx",sheetName = "neuron.up")
-godown=read.xlsx(file = "working_data/dge/dge.go.neuron.xlsx",sheetName = "neuron.down")
+goup=read.xlsx(file = "working_data/dge/dge.go.neuron.v2.moreCovariates.xlsx",sheetName = "neuron.up")
+godown=read.xlsx(file = "working_data/dge/dge.go.neuron.v2.moreCovariates.xlsx",sheetName = "neuron.down")
 goup$FDR=-log10(goup$p.value);goup=goup[1:10,];goup$dirc="up"
-godown$FDR=log10(godown$p.value);godown=godown[1:10,];godown$dirc="down"
+godown$FDR=log10(godown$p.value);godown=godown[1:min(10,nrow(godown)),];godown$dirc="down"
 go=rbind(goup,godown);go=go[order(go$FDR,decreasing = T),]
 
 ggplot(go, aes(x=reorder(term.name, FDR), y=FDR,fill=dirc)) + 
@@ -230,7 +235,7 @@ graph2ppt(file="working_data/figures/neuron.dge.plots.pptx",width=10.5,height=7.
 
 
 # oligo
-load("working_data/dge/dge.oligo.deseq2.RData")
+load("working_data/dge/dge.oligo.deseq2.v2.moreCovariates.RData")
 dat=as.data.frame(dge.deseq2)
 dat=dat[complete.cases(dat),]
 sigdat=dat[abs(dat$log2FoldChange) >= 0.58 & dat$padj < 0.05,]
@@ -249,9 +254,10 @@ ggplot()+geom_point(data=sigdat,aes(log2FoldChange,-log10(padj)),size=2,color="b
   theme_classic()+
   theme(text = element_text(family = "Arial"))
 
-graph2ppt(file="working_data/figures/oligo.dge.plots.pptx",width=7.6,height=7.1)
+graph2ppt(file="working_data/figures/oligo.dge.plots.pptx",width=7.6,height=7.1,append=TRUE)
 
 outwb=createWorkbook()
+sigdat=sigdat[order(sigdat$log2FoldChange,decreasing = T),]
 goup = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange > 0], 
                  max_set_size = 1000,
                  min_isect_size = 2,
@@ -260,11 +266,11 @@ goup = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange > 0],
                  hier_filtering = "moderate", 
                  custom_bg = rownames(dge.deseq2), 
                  src_filter = c("GO","KEGG"),
-                 ordered_query = F)
+                 ordered_query = T)
 goup=goup[order(goup$p.value),]
-sheet=createSheet(outwb,sheetName = "neuron.up")
+sheet=createSheet(outwb,sheetName = "oligo.up")
 addDataFrame(goup,sheet,row.names = F)
-
+sigdat=sigdat[order(sigdat$log2FoldChange,decreasing = F),]
 godown = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange < 0], 
                    max_set_size = 1000,
                    min_isect_size = 2,
@@ -273,20 +279,20 @@ godown = gprofiler(query=rownames(sigdat)[sigdat$log2FoldChange < 0],
                    hier_filtering = "moderate", 
                    custom_bg = rownames(dge.deseq2), 
                    src_filter = c("GO","KEGG"),
-                   ordered_query = F)
+                   ordered_query = T)
 godown=godown[order(godown$p.value),]
-sheet=createSheet(outwb,sheetName = "neuron.down")
+sheet=createSheet(outwb,sheetName = "oligo.down")
 addDataFrame(godown,sheet,row.names = F)
 
-saveWorkbook(outwb,file = "working_data/dge/dge.go.oligo.xlsx")
+saveWorkbook(outwb,file = "working_data/dge/dge.go.oligo.v2.moreCovariates.xlsx")
 
-goup=read.xlsx(file = "working_data/dge/dge.go.neuron.xlsx",sheetName = "neuron.up")
-godown=read.xlsx(file = "working_data/dge/dge.go.neuron.xlsx",sheetName = "neuron.down")
-goup$FDR=-log10(goup$p.value);goup=goup[1:10,];goup$dirc="up"
+goup=read.xlsx(file = "working_data/dge/dge.go.oligo.v2.moreCovariates.xlsx",sheetName = "oligo.up")
+godown=read.xlsx(file = "working_data/dge/dge.go.oligo.v2.moreCovariates.xlsx",sheetName = "oligo.down")
+goup$FDR=-log10(goup$p.value);goup=goup[1:min(10,nrow(goup)),];goup$dirc="up"
 godown$FDR=log10(godown$p.value);godown=godown[1:10,];godown$dirc="down"
 go=rbind(goup,godown);go=go[order(go$FDR,decreasing = T),]
 
-ggplot(go, aes(x=reorder(term.name, FDR), y=FDR,fill=dirc)) + 
+ggplot(go[complete.cases(go),], aes(x=reorder(term.name, FDR), y=FDR,fill=dirc)) + 
   geom_bar(stat="identity") + 
   scale_fill_manual(values = c("up" = "gold","down"="blue"))+
   coord_flip() + 
@@ -298,7 +304,7 @@ ggplot(go, aes(x=reorder(term.name, FDR), y=FDR,fill=dirc)) +
         axis.text.x = element_text(size = 10),
         axis.title.x = element_text(size=20))+
   guides(fill=F)
-graph2ppt(file="working_data/figures/neuron.dge.plots.pptx",width=10.5,height=7.1,append=TRUE)
+graph2ppt(file="working_data/figures/oligo.dge.plots.pptx",width=10.5,height=7.1,append=TRUE)
 
 library(clusterProfiler)
 library(org.Hs.eg.db)

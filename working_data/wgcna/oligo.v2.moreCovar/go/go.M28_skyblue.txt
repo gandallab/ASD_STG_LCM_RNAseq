@@ -1,0 +1,6 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0263	134	32	2	0.062	0.015	GO:0043413	BP	5	macromolecule glycosylation	1	ENSG00000151233,ENSG00000151778
+1	TRUE	0.0263	134	32	2	0.062	0.015	GO:0006486	BP	4	protein glycosylation	1	ENSG00000151233,ENSG00000151778
+1	TRUE	0.0319	420	28	2	0.071	0.005	GO:0042803	MF	1	protein homodimerization activity	1	ENSG00000105698,ENSG00000128191
+1	TRUE	0.0387	51	59	2	0.034	0.039	GO:0090100	BP	3	positive regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	1	ENSG00000135414,ENSG00000141622
+1	TRUE	0.0387	52	57	2	0.035	0.038	GO:0003725	MF	2	double-stranded RNA binding	1	ENSG00000128191,ENSG00000129351
