@@ -1,0 +1,5 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0447	68	26	3	0.115	0.044	GO:0006633	BP	2	fatty acid biosynthetic process	1	ENSG00000005187,ENSG00000006831,ENSG00000111144
+1	TRUE	0.0447	26	15	2	0.133	0.077	GO:0007099	BP	4	centriole replication	1	ENSG00000103995,ENSG00000111554
+1	TRUE	0.0447	26	15	2	0.133	0.077	GO:0098534	BP	1	centriole assembly	1	ENSG00000103995,ENSG00000111554
+1	TRUE	0.0447	2	165	2	0.012	1	GO:0003404	BP	3	optic vesicle morphogenesis	1	ENSG00000137203,ENSG00000138083

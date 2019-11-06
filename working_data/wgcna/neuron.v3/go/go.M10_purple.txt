@@ -1,0 +1,5 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0212	9	135	2	0.015	0.222	GO:0016281	CC	3	eukaryotic translation initiation factor 4F complex	1	ENSG00000156976,ENSG00000161960
+1	TRUE	0.0212	68	187	4	0.021	0.059	GO:0008135	MF	2	translation factor activity, RNA binding	1	ENSG00000104131,ENSG00000107581,ENSG00000156976,ENSG00000161960
+1	TRUE	0.041	152	282	6	0.021	0.039	KEGG:03013	keg	4	RNA transport	1	ENSG00000015568,ENSG00000104131,ENSG00000107581,ENSG00000156976,ENSG00000161960,ENSG00000265185
+1	TRUE	0.0488	3	259	2	0.008	0.667	GO:0002188	BP	1	translation reinitiation	1	ENSG00000107581,ENSG00000139726

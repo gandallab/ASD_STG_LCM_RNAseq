@@ -1,0 +1,5 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0296	2	118	2	0.017	1	GO:0097240	BP	3	chromosome attachment to the nuclear envelope	1	ENSG00000161904,ENSG00000174106
+1	TRUE	0.0296	2	118	2	0.017	1	GO:0070197	BP	2	meiotic attachment of telomere to nuclear envelope	1	ENSG00000161904,ENSG00000174106
+1	TRUE	0.0296	4	53	2	0.038	0.5	GO:0004861	MF	1	cyclin-dependent protein serine/threonine kinase inhibitor activity	1	ENSG00000147883,ENSG00000186834
+1	TRUE	0.041	6	46	2	0.043	0.333	GO:0002162	MF	4	dystroglycan binding	1	ENSG00000035403,ENSG00000188157

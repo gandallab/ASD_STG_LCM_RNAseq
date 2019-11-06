@@ -1,0 +1,10 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0326	6	76	2	0.026	0.333	GO:0036089	BP	3	cleavage furrow formation	1	ENSG00000178996,ENSG00000204991
+1	TRUE	0.0326	32	8	2	0.25	0.062	GO:0008375	MF	4	acetylglucosaminyltransferase activity	1	ENSG00000172339,ENSG00000176597
+1	TRUE	0.0398	96	7	2	0.286	0.021	GO:0051606	BP	7	detection of stimulus	1	ENSG00000065615,ENSG00000149948
+1	TRUE	0.0471	134	8	2	0.25	0.015	GO:0006486	BP	10	protein glycosylation	1	ENSG00000172339,ENSG00000176597
+1	TRUE	0.0472	19	60	2	0.033	0.105	GO:0006739	BP	8	NADP metabolic process	1	ENSG00000112992,ENSG00000169299
+1	TRUE	0.0472	78	56	3	0.054	0.038	GO:0048863	BP	5	stem cell differentiation	1	ENSG00000106536,ENSG00000149948,ENSG00000159216
+1	TRUE	0.0475	104	89	4	0.045	0.038	GO:0001227	MF	6	DNA-binding transcription repressor activity, RNA polymerase II-specific	1	ENSG00000140836,ENSG00000149948,ENSG00000170561,ENSG00000215397
+1	TRUE	0.0483	74	20	2	0.1	0.027	GO:0010212	BP	1	response to ionizing radiation	1	ENSG00000144554,ENSG00000149948
+1	TRUE	0.0488	16	80	2	0.025	0.125	GO:1902042	BP	2	negative regulation of extrinsic apoptotic signaling pathway via death domain receptors	1	ENSG00000118503,ENSG00000215397

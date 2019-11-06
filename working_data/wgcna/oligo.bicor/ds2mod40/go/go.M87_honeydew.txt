@@ -1,0 +1,5 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.041	71	8	2	0.25	0.028	GO:0000793	CC	2	condensed chromosome	1	ENSG00000160783,ENSG00000197299
+1	TRUE	0.0491	163	7	2	0.286	0.012	GO:0005667	CC	4	transcription factor complex	1	ENSG00000042429,ENSG00000160783
+1	TRUE	0.0491	175	36	3	0.083	0.017	GO:0098687	CC	1	chromosomal region	1	ENSG00000144635,ENSG00000160783,ENSG00000197299
+1	TRUE	0.0491	52	35	2	0.057	0.038	GO:0016363	CC	3	nuclear matrix	1	ENSG00000099783,ENSG00000197299

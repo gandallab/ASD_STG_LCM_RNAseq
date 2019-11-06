@@ -1,0 +1,3 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0366	16	11	2	0.182	0.125	GO:0000930	CC	1	gamma-tubulin complex	1	ENSG00000137822,ENSG00000196072
+1	TRUE	0.0366	17	11	2	0.182	0.118	GO:0043015	MF	2	gamma-tubulin binding	1	ENSG00000137822,ENSG00000196072
