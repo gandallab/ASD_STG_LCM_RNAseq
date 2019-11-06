@@ -40,9 +40,9 @@ ORA <- function(testpath,refpath,testbackground,refbackground) {
 
 # functions defined
 
-load("working_data/wgcna/neuron.bicor/neuron.bicor.recut.RData")
-load("working_data/wgcna/voom.forWGCNA.input.neuron.RData")
-softpower=6
+load("working_data/wgcna/neuron.v2.moreCovar//neuron.bicor.recut.RData")
+load("working_data/wgcna/voom.forWGCNA.input.neuron.v2.RData")
+softpower=7
 
 geneTree = networks$tree
 datExpr=networks$datExpr
@@ -57,7 +57,7 @@ datMeta$Diagnosis=factor(datMeta$Diagnosis,levels = c("Control","Autism"))
 datMeta=datMeta[order(datMeta$Diagnosis),]
 datMeta$seq=c(1:nrow(datMeta))
 datMeta=datMeta[match(colnames(datExpr),datMeta$Sample),]
-modTrait=read.delim("working_data/wgcna/neuron.bicor/modTrait.neuron.bicor.txt")
+modTrait=read.delim("working_data/wgcna/neuron.v2.moreCovar//modTrait.neuron.bicor.txt")
 
 #Load cell-type expression signatures for enrichment
 pSI.zhang = read.csv(file="D:/datasets/psychencode/cellTypes/Zhang_Human_Neuro2015_pSI_GSE21653.csv",row.names=1,stringsAsFactors = F)
@@ -121,7 +121,7 @@ for(i in 2:ncol(MEs$eigengenes)) {
           legend.title = element_text(size=17))
   
   #Gene ontology  
-  go = read.delim(paste("working_data/wgcna/neuron.bicor/go/overlap2.max1000/go.M",moduleNumber,"_",moduleColor,".txt",sep = ""),header = T,sep = "\t")
+  go = read.delim(paste("working_data/wgcna/neuron.v2.moreCovar//go//go.M",moduleNumber,"_",moduleColor,".txt",sep = ""),header = T,sep = "\t")
   go=go[complete.cases(go),]
   go=go[go$overlap.size > 1,]
   go=go[1:min(10,nrow(go)),]
@@ -208,7 +208,7 @@ for(i in 2:ncol(MEs$eigengenes)) {
   }else{
     ind=FALSE
   }
-  graph2ppt(file="working_data/figures/module.annotation.neuron.pptx",width=18,height=15,append=ind)
+  graph2ppt(file="working_data/figures/module.annotation.neuron.v2.pptx",width=18,height=15,append=ind)
   #  dev.off()
 }
 

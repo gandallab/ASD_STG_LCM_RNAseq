@@ -20,11 +20,11 @@ datMeta=colData(se_blocks)
 datMeta$Age = datMeta$Age + 0.00000001
 dds=DESeqDataSetFromMatrix(countData = round(assays(se_blocks)$counts),
                            colData = datMeta,
-                           design = ~Diagnosis + Sex + Age + seqPC2 + seqPC3)
+                           design = ~Diagnosis + Sex + Age + seqPC1 + seqPC2 + seqPC3)
 dds <- DESeq(dds)
 resultsNames(dds)
 dge.deseq2 <- results(dds, name="Diagnosis_Autism_vs_Control")
-save(file = "./working_data/dge/dge.blocks.deseq2.RData",dge.deseq2)
+save(file = "./working_data/dge/dge.blocks.deseq2.v2.moreCovariates.RData",dge.deseq2)
 table(dge.deseq2$padj < 0.05)
 
 # neuron
@@ -32,21 +32,24 @@ datMeta=colData(se_neuron)
 datMeta$Age = datMeta$Age + 0.00000001
 dds=DESeqDataSetFromMatrix(countData = round(assays(se_neuron)$counts),
                            colData = datMeta,
-                           design = ~Diagnosis + Sex + Age)
+                           design = ~Diagnosis + Sex + Age + seqPC1 + seqPC2 + seqPC3)
 dds <- DESeq(dds)
 resultsNames(dds)
 dge.deseq2 <- results(dds, name="Diagnosis_Autism_vs_Control")
-save(file = "./working_data/dge/dge.neuron.deseq2.RData",dge.deseq2)
+save(file = "./working_data/dge/dge.neuron.deseq2.v2.moreCovariates.RData",dge.deseq2)
 table(dge.deseq2$padj < 0.05)
+dat=data.frame(dge.deseq2)
+annot=read.delim("D:/references/gencode.v19.gene.name.txt")
+dat$genenames=annot$genename[match(rownames(dat),annot$geneid)]
 
 # oligo
 datMeta=colData(se_oligo)
 datMeta$Age = datMeta$Age + 0.00000001
 dds=DESeqDataSetFromMatrix(countData = round(assays(se_oligo)$counts),
                            colData = datMeta,
-                           design = ~Diagnosis + Sex + Age)
+                           design = ~Diagnosis + Sex + Age + seqPC1 + seqPC2)
 dds <- DESeq(dds)
 resultsNames(dds)
 dge.deseq2 <- results(dds, name="Diagnosis_Autism_vs_Control")
-save(file = "./working_data/dge/dge.oligo.deseq2.RData",dge.deseq2)
+save(file = "./working_data/dge/dge.oligo.deseq2.v2.moreCovariates.RData",dge.deseq2)
 table(dge.deseq2$padj < 0.05)

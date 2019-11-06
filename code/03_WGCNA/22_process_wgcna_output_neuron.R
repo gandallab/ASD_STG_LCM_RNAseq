@@ -18,11 +18,13 @@ ggplot(dat)+
   theme_classic()+
   theme(text = element_text(family = "Arial"))
 
+graph2ppt(file="working_data/figures/neuron.wgcna.v2.moreCovar.pptx",width=8.5,height=6.5)
+
 # process wgcna
 rm(list=ls());gc()
 options(stringsAsFactors = F)
-load("working_data/wgcna/neuron.bicor//neuron.bicor.recut.RData")
-load("working_data/wgcna/voom.forWGCNA.input.neuron.RData")
+load("working_data/wgcna/neuron.v2.moreCovar///neuron.bicor.recut.RData")
+load("working_data/wgcna/voom.forWGCNA.input.neuron.v2.RData")
 
 mds=cmdscale(dist(t(datExpr)))
 colnames(mds)=c("PC1","PC2")
@@ -34,7 +36,7 @@ ggplot(dat)+
   theme_classic()+
   theme(text = element_text(family = "Arial"))
 
-graph2ppt(file="working_data/figures/neuron.wgcna.pptx",width=8.5,height=6.5)
+graph2ppt(file="working_data/figures/neuron.wgcna.v2.moreCovar.pptx",width=8.5,height=6.5,append=TRUE)
 
 # modTrait
 library(WGCNA)
@@ -78,9 +80,9 @@ p=(ggplot(modTrait, aes(x=Module,y=Group, label=text)) +
      geom_text(size=3, color="black") + ylab("") + xlab("") + theme(axis.text.x = element_text(angle=30, hjust=1), axis.text.y = element_text(size=14))+
      geom_tile(aes(x=Module,y=0.1),fill=modTrait$Module,height=0.1))
 print(p)
-graph2ppt(file="working_data/figures/neuron.wgcna.pptx",width=7.8,height=2.7,append=TRUE)
+graph2ppt(file="working_data/figures/neuron.wgcna.v2.moreCovar.pptx",width=7.8,height=2.7,append=TRUE)
 
-write.table(modTrait,file = "working_data/wgcna/neuron.bicor/modTrait.neuron.bicor.txt",
+write.table(modTrait,file = "working_data/wgcna/neuron.v2.moreCovar/modTrait.neuron.bicor.txt",
             quote = F,
             sep="\t",
             row.names = F)
@@ -113,5 +115,5 @@ for(i in 2:length(unique(modules))){
   #	go = go[order(go$p.value)[1:min(10,nrow(go))],]
   go = go[order(go$p.value),]
   go = go[go$p.value < 0.05,]
-  write.table(go,file=paste("working_data/wgcna/neuron.bicor/go/go.M",moduleNumber,"_",moduleColor,".txt",sep=""),quote=F,sep="\t",row.names=F)
+  write.table(go,file=paste("working_data/wgcna/neuron.v2.moreCovar/go/go.M",moduleNumber,"_",moduleColor,".txt",sep=""),quote=F,sep="\t",row.names=F)
 }
