@@ -1,0 +1,6 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0354	59	72	3	0.042	0.051	KEGG:04622	keg	2	RIG-I-like receptor signaling pathway	1	ENSG00000160703,ENSG00000168811,ENSG00000269335
+1	TRUE	0.0391	1	1	1	1	1	GO:0046491	BP	3	L-methylmalonyl-CoA metabolic process	1	ENSG00000124370
+1	TRUE	0.0391	1	1	1	1	1	GO:0019626	BP	4	short-chain fatty acid catabolic process	1	ENSG00000124370
+1	TRUE	0.0391	37	258	4	0.016	0.108	GO:0042267	BP	5	natural killer cell mediated cytotoxicity	1	ENSG00000131015,ENSG00000162739,ENSG00000168811,ENSG00000188393
+1	TRUE	0.0391	1	1	1	1	1	GO:0004493	MF	1	methylmalonyl-CoA epimerase activity	1	ENSG00000124370

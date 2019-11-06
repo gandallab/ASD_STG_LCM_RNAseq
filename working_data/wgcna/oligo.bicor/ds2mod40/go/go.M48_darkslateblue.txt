@@ -1,0 +1,5 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0249	90	15	3	0.2	0.033	KEGG:04210	keg	1	Apoptosis	1	ENSG00000129484,ENSG00000153094,ENSG00000170345
+1	TRUE	0.0397	3	47	2	0.043	0.667	GO:1902237	BP	3	positive regulation of endoplasmic reticulum stress-induced intrinsic apoptotic signaling pathway	1	ENSG00000153094,ENSG00000158092
+1	TRUE	0.0397	8	20	2	0.1	0.25	GO:0031125	BP	4	rRNA 3'-end processing	1	ENSG00000104626,ENSG00000120699
+1	TRUE	0.0397	5	39	2	0.051	0.4	GO:0005787	CC	2	signal peptidase complex	1	ENSG00000118363,ENSG00000140612

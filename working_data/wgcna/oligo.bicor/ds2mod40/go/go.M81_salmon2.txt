@@ -1,0 +1,10 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.0108	27	17	2	0.118	0.074	GO:0007091	BP	11	metaphase/anaphase transition of mitotic cell cycle	1	ENSG00000138778,ENSG00000154473
+1	TRUE	0.0108	27	17	2	0.118	0.074	GO:0010965	BP	1	regulation of mitotic sister chromatid separation	1	ENSG00000138778,ENSG00000154473
+1	TRUE	0.0108	9	27	2	0.074	0.222	GO:0051382	BP	10	kinetochore assembly	1	ENSG00000063978,ENSG00000138778
+1	TRUE	0.0108	10	27	2	0.074	0.2	GO:0051383	BP	2	kinetochore organization	1	ENSG00000063978,ENSG00000138778
+1	TRUE	0.0233	66	17	2	0.118	0.03	GO:0000776	CC	9	kinetochore	1	ENSG00000138778,ENSG00000154473
+1	TRUE	0.0319	259	6	2	0.333	0.008	GO:0048193	BP	6	Golgi vesicle transport	1	ENSG00000138778,ENSG00000143771
+1	TRUE	0.0435	65	27	2	0.074	0.031	GO:0032182	MF	7	ubiquitin-like protein binding	1	ENSG00000063978,ENSG00000154473
+1	TRUE	0.047	134	18	2	0.111	0.015	GO:0006486	BP	5	protein glycosylation	1	ENSG00000187210,ENSG00000198380
+1	TRUE	0.0472	95	24	2	0.083	0.021	GO:0001664	MF	4	G-protein coupled receptor binding	1	ENSG00000143771,ENSG00000168398

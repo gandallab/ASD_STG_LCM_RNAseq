@@ -1,0 +1,10 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.00118	3	115	3	0.026	1	GO:0038165	BP	5	oncostatin-M-mediated signaling pathway	1	ENSG00000113594,ENSG00000134352,ENSG00000145623
+1	TRUE	0.00118	3	115	3	0.026	1	GO:0004924	MF	7	oncostatin-M receptor activity	1	ENSG00000113594,ENSG00000134352,ENSG00000145623
+1	TRUE	0.0288	2	86	2	0.023	1	GO:0048861	BP	9	leukemia inhibitory factor signaling pathway	1	ENSG00000113594,ENSG00000134352
+1	TRUE	0.0288	2	86	2	0.023	1	GO:0005127	MF	2	ciliary neurotrophic factor receptor binding	1	ENSG00000113594,ENSG00000134352
+1	TRUE	0.0288	2	86	2	0.023	1	GO:0004923	MF	1	leukemia inhibitory factor receptor activity	1	ENSG00000113594,ENSG00000134352
+1	TRUE	0.0392	15	80	3	0.037	0.2	GO:1990089	BP	4	response to nerve growth factor	1	ENSG00000109756,ENSG00000114331,ENSG00000116473
+1	TRUE	0.0392	14	16	2	0.125	0.143	GO:0036151	BP	3	phosphatidylcholine acyl-chain remodeling	1	ENSG00000087253,ENSG00000135241
+1	TRUE	0.0392	3	86	2	0.023	0.667	GO:0070120	BP	8	ciliary neurotrophic factor-mediated signaling pathway	1	ENSG00000113594,ENSG00000134352
+1	TRUE	0.0392	2	115	2	0.017	1	GO:0005900	CC	6	oncostatin-M receptor complex	1	ENSG00000134352,ENSG00000145623

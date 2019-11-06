@@ -1,0 +1,16 @@
+Datatype	Event	Counts
+block	A3SS	3985
+block	A5SS	2413
+block	MXE	18963
+block	RI	3246
+block	SE	44803
+oligo	A3SS	7
+oligo	A5SS	5
+oligo	MXE	493
+oligo	RI	19
+oligo	SE	24
+neuron	A3SS	169
+neuron	A5SS	85
+neuron	MXE	1860
+neuron	RI	179
+neuron	SE	1221

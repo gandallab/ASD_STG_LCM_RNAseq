@@ -1,0 +1,5 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.03	6	46	2	0.043	0.333	GO:0009404	BP	3	toxin metabolic process	1	ENSG00000065621,ENSG00000128309
+1	TRUE	0.0458	112	46	3	0.065	0.027	GO:0009636	BP	2	response to toxic substance	1	ENSG00000021826,ENSG00000065621,ENSG00000128309
+1	TRUE	0.0458	29	46	2	0.043	0.069	GO:0000096	BP	4	sulfur amino acid metabolic process	1	ENSG00000021826,ENSG00000128309
+1	TRUE	0.0458	513	46	5	0.109	0.01	GO:0019752	BP	1	carboxylic acid metabolic process	1	ENSG00000009765,ENSG00000021826,ENSG00000065621,ENSG00000128309,ENSG00000256591

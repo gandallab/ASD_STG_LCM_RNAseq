@@ -1,0 +1,2 @@
+query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
+1	TRUE	0.012	13	29	2	0.069	0.154	KEGG:00770	keg	1	Pantothenate and CoA biosynthesis	1	ENSG00000112299,ENSG00000197594
