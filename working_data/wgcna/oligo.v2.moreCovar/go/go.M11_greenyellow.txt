@@ -1,4 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0443	14	150	3	0.02	0.214	KEGG:00511	keg	1	Other glycan degradation	1	ENSG00000049860,ENSG00000140400,ENSG00000169660
-1	TRUE	0.0443	65	143	5	0.035	0.077	KEGG:05146	keg	3	Amoebiasis	1	ENSG00000058085,ENSG00000105329,ENSG00000137462,ENSG00000164692,ENSG00000171608
-1	TRUE	0.0443	51	112	4	0.036	0.078	KEGG:01524	keg	2	Platinum drug resistance	1	ENSG00000012048,ENSG00000015475,ENSG00000113318,ENSG00000171608

@@ -1,5 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0482	7	56	2	0.036	0.286	GO:0071267	BP	4	L-methionine salvage	1	ENSG00000037757,ENSG00000132840
-1	TRUE	0.0482	7	56	2	0.036	0.286	GO:0071265	BP	3	L-methionine biosynthetic process	1	ENSG00000037757,ENSG00000132840
-1	TRUE	0.0482	77	20	3	0.15	0.039	GO:0009451	BP	2	RNA modification	1	ENSG00000043514,ENSG00000129317,ENSG00000164944
-1	TRUE	0.0482	74	7	2	0.286	0.027	GO:0031124	BP	1	mRNA 3'-end processing	1	ENSG00000155858,ENSG00000164944

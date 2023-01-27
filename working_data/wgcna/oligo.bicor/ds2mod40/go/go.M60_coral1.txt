@@ -1,5 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.000893	7	19	2	0.105	0.286	KEGG:00430	keg	4	Taurine and hypotaurine metabolism	1	ENSG00000099998,ENSG00000139631
-1	TRUE	0.00693	63	14	2	0.143	0.032	KEGG:05220	keg	1	Chronic myeloid leukemia	1	ENSG00000033327,ENSG00000185634
-1	TRUE	0.0169	120	14	2	0.143	0.017	KEGG:04072	keg	2	Phospholipase D signaling pathway	1	ENSG00000033327,ENSG00000185634
-1	TRUE	0.0237	164	14	2	0.143	0.012	KEGG:04014	keg	3	Ras signaling pathway	1	ENSG00000033327,ENSG00000185634

@@ -1,4 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0241	20	108	3	0.028	0.15	KEGG:00563	keg	3	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis	1	ENSG00000108474,ENSG00000165195,ENSG00000185808
-1	TRUE	0.0467	10	108	3	0.028	0.3	GO:0016254	BP	2	preassembly of GPI anchor in ER membrane	1	ENSG00000108474,ENSG00000165195,ENSG00000185808
-1	TRUE	0.0467	2	88	2	0.023	1	GO:0017176	MF	1	phosphatidylinositol N-acetylglucosaminyltransferase activity	1	ENSG00000165195,ENSG00000185808

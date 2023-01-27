@@ -1,3 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0462	122	79	2	0.025	0.016	GO:0006261	BP	1	DNA-dependent DNA replication	1	ENSG00000101003,ENSG00000146263
-1	TRUE	0.0467	172	68	2	0.029	0.012	GO:1901605	BP	2	alpha-amino acid metabolic process	1	ENSG00000099810,ENSG00000115919

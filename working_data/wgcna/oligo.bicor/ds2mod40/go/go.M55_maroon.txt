@@ -1,9 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0447	139	44	2	0.045	0.014	KEGG:04024	keg	4	cAMP signaling pathway	1	ENSG00000129467,ENSG00000131196
-1	TRUE	0.0447	168	44	2	0.045	0.012	KEGG:05166	keg	8	Human T-cell leukemia virus 1 infection	1	ENSG00000129467,ENSG00000131196
-1	TRUE	0.0447	116	42	2	0.048	0.017	KEGG:00230	keg	3	Purine metabolism	1	ENSG00000105849,ENSG00000129467
-1	TRUE	0.0447	122	44	2	0.045	0.016	KEGG:04022	keg	1	cGMP-PKG signaling pathway	1	ENSG00000129467,ENSG00000131196
-1	TRUE	0.0447	153	44	2	0.045	0.013	KEGG:05163	keg	7	Human cytomegalovirus infection	1	ENSG00000129467,ENSG00000131196
-1	TRUE	0.0447	61	63	2	0.032	0.033	KEGG:00240	keg	2	Pyrimidine metabolism	1	ENSG00000105849,ENSG00000129187
-1	TRUE	0.0447	52	66	2	0.03	0.038	KEGG:04662	keg	5	B cell receptor signaling pathway	1	ENSG00000131196,ENSG00000254087
-1	TRUE	0.0447	122	44	2	0.045	0.016	KEGG:04921	keg	6	Oxytocin signaling pathway	1	ENSG00000129467,ENSG00000131196

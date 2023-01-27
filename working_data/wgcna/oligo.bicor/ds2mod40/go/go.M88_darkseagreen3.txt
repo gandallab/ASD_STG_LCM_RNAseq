@@ -1,5 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0423	102	29	3	0.103	0.029	GO:0014706	BP	1	striated muscle tissue development	1	ENSG00000112276,ENSG00000140795,ENSG00000170989
-1	TRUE	0.0423	17	23	2	0.087	0.118	GO:0001881	BP	2	receptor recycling	1	ENSG00000112276,ENSG00000182718
-1	TRUE	0.0451	84	40	3	0.075	0.036	GO:0008360	BP	3	regulation of cell shape	1	ENSG00000105053,ENSG00000112276,ENSG00000180263
-1	TRUE	0.0484	43	23	2	0.087	0.047	GO:0031902	CC	4	late endosome membrane	1	ENSG00000167716,ENSG00000182718

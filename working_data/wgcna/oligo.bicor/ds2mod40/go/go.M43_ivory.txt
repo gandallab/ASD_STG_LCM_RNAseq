@@ -1,2 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0191	29	16	2	0.125	0.069	KEGG:04960	keg	1	Aldosterone-regulated sodium reabsorption	1	ENSG00000101892,ENSG00000168447

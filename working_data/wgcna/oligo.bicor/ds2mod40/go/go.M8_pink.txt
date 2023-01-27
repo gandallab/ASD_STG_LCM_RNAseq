@@ -1,9 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0176	6	141	3	0.021	0.5	GO:0045342	BP	7	MHC class II biosynthetic process	1	ENSG00000018280,ENSG00000136869,ENSG00000196591
-1	TRUE	0.0176	2	86	2	0.023	1	GO:0043586	BP	3	tongue development	1	ENSG00000116478,ENSG00000196591
-1	TRUE	0.0356	111	92	5	0.054	0.045	KEGG:05202	keg	6	Transcriptional misregulation in cancer	1	ENSG00000116478,ENSG00000171843,ENSG00000172216,ENSG00000176046,ENSG00000196591
-1	TRUE	0.0395	3	86	2	0.023	0.667	GO:0060789	BP	2	hair follicle placode formation	1	ENSG00000116478,ENSG00000196591
-1	TRUE	0.0447	3	104	2	0.019	0.667	GO:1903971	BP	4	positive regulation of response to macrophage colony-stimulating factor	1	ENSG00000136869,ENSG00000184371
-1	TRUE	0.0468	3	143	2	0.014	0.667	GO:0042832	BP	5	defense response to protozoan	1	ENSG00000018280,ENSG00000172243
-1	TRUE	0.0468	18	104	3	0.029	0.167	GO:0032720	BP	1	negative regulation of tumor necrosis factor production	1	ENSG00000107738,ENSG00000136869,ENSG00000258839
-1	TRUE	0.0468	19	104	3	0.029	0.158	GO:0045670	BP	8	regulation of osteoclast differentiation	1	ENSG00000136869,ENSG00000172216,ENSG00000184371

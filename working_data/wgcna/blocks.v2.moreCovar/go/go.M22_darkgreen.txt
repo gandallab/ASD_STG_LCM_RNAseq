@@ -1,5 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0387	66	28	2	0.071	0.03	KEGG:05218	keg	2	Melanoma	1	ENSG00000118972,ENSG00000141510
-1	TRUE	0.0438	169	25	2	0.08	0.012	KEGG:05168	keg	3	Herpes simplex infection	1	ENSG00000116350,ENSG00000141510
-1	TRUE	0.0438	140	28	2	0.071	0.014	KEGG:05226	keg	4	Gastric cancer	1	ENSG00000118972,ENSG00000141510
-1	TRUE	0.0438	141	28	2	0.071	0.014	KEGG:05224	keg	1	Breast cancer	1	ENSG00000118972,ENSG00000141510

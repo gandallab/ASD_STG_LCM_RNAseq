@@ -1,5 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0328	13	95	3	0.032	0.231	GO:0048538	BP	3	thymus development	1	ENSG00000164690,ENSG00000182580,ENSG00000184058
-1	TRUE	0.0401	4	99	2	0.02	0.5	GO:1900060	BP	2	negative regulation of ceramide biosynthetic process	1	ENSG00000123353,ENSG00000128699
-1	TRUE	0.0401	3	99	2	0.02	0.667	GO:0090156	BP	1	cellular sphingolipid homeostasis	1	ENSG00000123353,ENSG00000128699
-1	TRUE	0.0401	4	99	2	0.02	0.5	GO:0035339	CC	4	SPOTS complex	1	ENSG00000123353,ENSG00000128699

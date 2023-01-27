@@ -1,2 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0284	39	34	2	0.059	0.051	KEGG:05150	keg	1	Staphylococcus aureus infection	1	ENSG00000159189,ENSG00000174175

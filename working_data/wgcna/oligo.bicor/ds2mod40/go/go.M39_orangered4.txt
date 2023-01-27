@@ -1,5 +1,0 @@
-query.number	significant	p.value	term.size	query.size	overlap.size	precision	recall	term.id	domain	subgraph.number	term.name	relative.depth	intersection
-1	TRUE	0.0265	221	5	3	0.6	0.014	GO:0010008	CC	4	endosome membrane	1	ENSG00000100266,ENSG00000132612,ENSG00000206503
-1	TRUE	0.0465	88	83	5	0.06	0.057	GO:0051015	MF	3	actin filament binding	1	ENSG00000050405,ENSG00000076826,ENSG00000109536,ENSG00000111229,ENSG00000130402
-1	TRUE	0.0465	8	46	2	0.043	0.25	GO:0019215	MF	2	intermediate filament binding	1	ENSG00000026025,ENSG00000182253
-1	TRUE	0.0485	246	3	2	0.667	0.008	GO:0010256	BP	1	endomembrane system organization	1	ENSG00000100266,ENSG00000132612
