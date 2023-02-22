@@ -5,3 +5,4 @@ The raw RNAseq data is deposited in dbGAP with accession number phs003208.
 
 The "script" folder contains code used to analyze the data.
 
+The "Supplementary Datasets" folder contains all supplemental tables.
