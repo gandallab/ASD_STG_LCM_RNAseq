@@ -8,10 +8,10 @@ options(stringsAsFactors = F)
 rm(list = ls());gc()
 options(stringsAsFactors = F)
 library(tidyverse)
-#load("working_data/dge/dge.blocks.fc2pass.RData")
-load("working_data/dge/dge.neuron.fc2pass.RData")
+#load("dge.blocks.fc2pass.RData")
+load("dge.neuron.fc2pass.RData")
 dat=as.data.frame(dge.deseq2)
-old=read.delim("working_data/AMPAD/MSBB_Differential_Expression_(diagnosis).tsv")
+old=read.delim("MSBB_Differential_Expression_(diagnosis).tsv")
 old1=old[old$Comparison == "AD_STG - CT_STG", c("ensembl_gene_id","logFC","t","P.Value","adj.P.Val","Direction","hgnc_symbol")]
 #dat=dat[dat$pvalue < 0.1,]
 dat1=dat[,c("log2FoldChange","stat","pvalue","padj"),drop=F]
@@ -79,6 +79,3 @@ ggplot()+
 
 ggvenn(data=list(ASD=plotdata$Row.names[plotdata$padj < 0.1],AD=plotdata$Row.names[plotdata$adj.P.Val < 0.1]),show_percentage=FALSE)
 
-fishertest=fisher.test(matrix(c(316, 7373, 298, 19061-298-316-7373), 2, 2),conf.int=TRUE)
-fishertest=fisher.test(matrix(c(119, 98, 5896, 13031-98-119-5896), 2, 2),conf.int=TRUE)
-fishertest
